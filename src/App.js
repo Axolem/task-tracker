@@ -53,6 +53,7 @@ function App() {
         title="Task Tracer"
         author="Xoli"
         onAdd={() => setShowAddTask(!showAddTask)}
+        showAdd={showAddTask}
       />
       {showAddTask && <AddTask onAdd={addTask} />}
       {tasks.length > 0 ? (
